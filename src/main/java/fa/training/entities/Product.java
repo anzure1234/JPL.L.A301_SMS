@@ -1,5 +1,7 @@
 package fa.training.entities;
 
+import java.util.Scanner;
+
 public class Product {
     private int product_id;
     private String product_name;
@@ -36,5 +38,16 @@ public class Product {
 
     public void setList_price(double list_price) {
         this.list_price = list_price;
+    }
+
+    public void addProduct(){
+        Scanner sc = new Scanner(System.in);
+        Product product = new Product();
+        System.out.println("Enter product id: ");
+        product.setProduct_id(sc.nextInt());
+        System.out.println("Enter product name: ");
+        product.setProduct_name(sc.nextLine());
+        System.out.println("Enter list price: ");
+        product.setList_price(sc.nextDouble());
     }
 }

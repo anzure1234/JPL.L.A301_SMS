@@ -11,7 +11,7 @@ public interface CustomerDAO {
     boolean addCustomer(Customer customer);
     boolean deleteCustomer(int customerId);
     boolean updateCustomer(Customer customer);
-    List<Order> getAllOrdersByCustomerId(int customerId);
+
 
 
 

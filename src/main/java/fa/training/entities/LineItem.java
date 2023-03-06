@@ -1,5 +1,7 @@
 package fa.training.entities;
 
+import java.util.Scanner;
+
 public class LineItem {
     private int order_id;
     private int product_id;
@@ -46,5 +48,19 @@ public class LineItem {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void addLineItem(){
+        Scanner sc = new Scanner(System.in);
+        LineItem lineItem = new LineItem();
+        System.out.println("Enter order id: ");
+        lineItem.setOrder_id(sc.nextInt());
+        System.out.println("Enter product id: ");
+        lineItem.setProduct_id(sc.nextInt());
+        System.out.println("Enter quantity: ");
+        lineItem.setQuantity(sc.nextInt());
+        System.out.println("Enter price: ");
+        lineItem.setPrice(sc.nextDouble());
+
     }
 }

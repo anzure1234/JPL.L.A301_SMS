@@ -32,12 +32,19 @@ public class Customer {
 
     public void addCustomer(){
         Scanner scanner = new Scanner(System.in);
-
         Customer customer = new Customer();
         System.out.println("Enter customer id: ");
         customer.setCustomer_id(scanner.nextInt());
         System.out.println("Enter customer name: ");
         customer.setCustomer_name(scanner.next());
 
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customer_id=" + customer_id +
+                ", customer_name='" + customer_name + '\'' +
+                '}';
     }
 }
