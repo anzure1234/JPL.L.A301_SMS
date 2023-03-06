@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e849921a-87f9-4774-9cce-9922e0196571" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fa/training/dao/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fa/training/dao/ProductDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fa/training/utils/DBUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fa/training/dao/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fa/training/dao/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fa/training/dao/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fa/training/dao/CustomerDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fa/training/dao/LineItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fa/training/dao/LineItemDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fa/training/dao/LineItemDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fa/training/dao/LineItemDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fa/training/dao/OrderDAOimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fa/training/dao/OrderDAOimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fa/training/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fa/training/entities/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fa/training/entities/LineItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fa/training/entities/LineItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fa/training/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fa/training/entities/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fa/training/main/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fa/training/main/main.java" afterDir="false" />
-    </list>
+    <list default="true" id="e849921a-87f9-4774-9cce-9922e0196571" name="Changes" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,12 +65,24 @@
       <workItem from="1678107054183" duration="895000" />
       <workItem from="1678107968193" duration="1440000" />
       <workItem from="1678109426879" duration="2000" />
-      <workItem from="1678109510238" duration="7975000" />
+      <workItem from="1678109510238" duration="8178000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1678118715757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678118715757</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
