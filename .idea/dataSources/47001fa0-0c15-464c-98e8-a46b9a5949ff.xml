@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="SMS@localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.45">
+    <root id="1">
+      <ServerVersion>16.0.1000</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="BikeStores"/>
+    <database id="3" parent="1" name="EMS"/>
+    <database id="4" parent="1" name="FJB_04"/>
+    <database id="5" parent="1" name="GuitarShopDB"/>
+    <database id="6" parent="1" name="HR_DB"/>
+    <database id="7" parent="1" name="master"/>
+    <database id="8" parent="1" name="model"/>
+    <database id="9" parent="1" name="msdb"/>
+    <database id="10" parent="1" name="SMS">
+      <Current>1</Current>
+      <Fingerprint>11.44990/74B75E5A-3722-4216-B81D-203AEE438000@DESKTOP-4SEQQKB\SQLE</Fingerprint>
+      <Grants>-9223372036854775808|database||1|connect|G
+-9223372036854775808|database||0|view any column encryption key definition|G
+-9223372036854775808|database||0|view any column master key definition|G</Grants>
+      <PermissionsCheckSum>3196235284</PermissionsCheckSum>
+    </database>
+    <database id="11" parent="1" name="StudentMS"/>
+    <database id="12" parent="1" name="tempdb"/>
+    <role id="13" parent="10" name="public">
+      <AuthType>none</AuthType>
+      <ObjectId>0</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="14" parent="10" name="dbo">
+      <AuthType>instance</AuthType>
+      <DefaultSchema>dbo</DefaultSchema>
+      <ObjectId>1</ObjectId>
+    </role>
+    <role id="15" parent="10" name="guest">
+      <AuthType>none</AuthType>
+      <DefaultSchema>guest</DefaultSchema>
+      <ObjectId>2</ObjectId>
+    </role>
+    <role id="16" parent="10" name="INFORMATION_SCHEMA">
+      <AuthType>none</AuthType>
+      <ObjectId>3</ObjectId>
+    </role>
+    <role id="17" parent="10" name="sys">
+      <AuthType>none</AuthType>
+      <ObjectId>4</ObjectId>
+    </role>
+    <role id="18" parent="10" name="db_owner">
+      <AuthType>none</AuthType>
+      <ObjectId>16384</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="19" parent="10" name="db_accessadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16385</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="20" parent="10" name="db_securityadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16386</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="21" parent="10" name="db_ddladmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16387</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="22" parent="10" name="db_backupoperator">
+      <AuthType>none</AuthType>
+      <ObjectId>16389</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="23" parent="10" name="db_datareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16390</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="24" parent="10" name="db_datawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16391</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="25" parent="10" name="db_denydatareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16392</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="26" parent="10" name="db_denydatawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16393</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <schema id="27" parent="10" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="28" parent="10" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="29" parent="10" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="30" parent="10" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="31" parent="10" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="32" parent="10" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="33" parent="10" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="34" parent="10" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="35" parent="10" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="36" parent="10" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="37" parent="10" name="dbo">
+      <Current>1</Current>
+      <IntrospectionTimestamp>2023-03-07.20:42:04.043</IntrospectionTimestamp>
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="38" parent="10" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="39" parent="10" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="40" parent="37" name="Customer">
+      <CreatedTimestamp>2023-03-07.05:20:17.107</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:22:00.057</ModifiedTimestamp>
+      <ObjectId>1205579333</ObjectId>
+    </table>
+    <table id="41" parent="37" name="Employee">
+      <CreatedTimestamp>2023-03-07.05:20:17.120</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:22:00.063</ModifiedTimestamp>
+      <ObjectId>1237579447</ObjectId>
+    </table>
+    <table id="42" parent="37" name="LineItem">
+      <CreatedTimestamp>2023-03-07.05:22:05.203</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:22:05.203</ModifiedTimestamp>
+      <ObjectId>1493580359</ObjectId>
+    </table>
+    <table id="43" parent="37" name="Orders">
+      <CreatedTimestamp>2023-03-07.05:22:00.047</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:26:07.057</ModifiedTimestamp>
+      <ObjectId>1429580131</ObjectId>
+    </table>
+    <table id="44" parent="37" name="Product">
+      <CreatedTimestamp>2023-03-07.05:20:17.127</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:22:05.213</ModifiedTimestamp>
+      <ObjectId>1285579618</ObjectId>
+    </table>
+    <column id="45" parent="40" name="customer_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="46" parent="40" name="customer_name">
+      <DasType>nvarchar(50 char)|0s</DasType>
+      <Position>2</Position>
+      <CollationName>SQL_Latin1_General_CP1_CI_AS</CollationName>
+    </column>
+    <index id="47" parent="40" name="PK__Customer__CD65CB85A50DA19E">
+      <Clustering>1</Clustering>
+      <ColNames>customer_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="48" parent="40" name="PK__Customer__CD65CB85A50DA19E">
+      <CreatedTimestamp>2023-03-07.05:20:17.110</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:20:17.110</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1221579390</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__Customer__CD65CB85A50DA19E</UnderlyingIndexName>
+    </key>
+    <check id="49" parent="41" name="CK__Employee__salary__4BAC3F29">
+      <ColNames>salary</ColNames>
+      <CreatedTimestamp>2023-03-07.05:20:17.120</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:20:17.120</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1269579561</ObjectId>
+      <Predicate>[salary]&gt;0</Predicate>
+    </check>
+    <column id="50" parent="41" name="employee_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="51" parent="41" name="employee_name">
+      <DasType>nvarchar(50 char)|0s</DasType>
+      <Position>2</Position>
+      <CollationName>SQL_Latin1_General_CP1_CI_AS</CollationName>
+    </column>
+    <column id="52" parent="41" name="salary">
+      <DasType>money|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="53" parent="41" name="supervisor_id">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="54" parent="41" name="PK__Employee__C52E0BA8D69AFC69">
+      <Clustering>1</Clustering>
+      <ColNames>employee_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="55" parent="41" name="PK__Employee__C52E0BA8D69AFC69">
+      <CreatedTimestamp>2023-03-07.05:20:17.120</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:20:17.120</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1253579504</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__Employee__C52E0BA8D69AFC69</UnderlyingIndexName>
+    </key>
+    <column id="56" parent="42" name="order_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="57" parent="42" name="product_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="58" parent="42" name="quantity">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="59" parent="42" name="price">
+      <DasType>money|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="60" parent="42" name="FK__LineItem__order___5AEE82B9">
+      <ColNames>order_id</ColNames>
+      <CreatedTimestamp>2023-03-07.05:22:05.207</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:22:05.207</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1525580473</ObjectId>
+      <RefColNames>order_id</RefColNames>
+      <RefTableId>1429580131</RefTableId>
+      <RefTableName>Orders</RefTableName>
+    </foreign-key>
+    <foreign-key id="61" parent="42" name="FK__LineItem__produc__5BE2A6F2">
+      <ColNames>product_id</ColNames>
+      <CreatedTimestamp>2023-03-07.05:22:05.210</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:22:05.210</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1541580530</ObjectId>
+      <RefColNames>product_id</RefColNames>
+      <RefTableId>1285579618</RefTableId>
+      <RefTableName>Product</RefTableName>
+    </foreign-key>
+    <index id="62" parent="42" name="FK_LineItem">
+      <Clustering>1</Clustering>
+      <ColNames>order_id
+product_id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="63" parent="42" name="FK_LineItem">
+      <CreatedTimestamp>2023-03-07.05:22:05.203</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:22:05.203</ModifiedTimestamp>
+      <ObjectId>1509580416</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>FK_LineItem</UnderlyingIndexName>
+    </key>
+    <column id="64" parent="43" name="order_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="65" parent="43" name="order_date">
+      <DasType>date|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="66" parent="43" name="customer_id">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="67" parent="43" name="employee_id">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="68" parent="43" name="total">
+      <DasType>float|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="69" parent="43" name="FK__Orders__customer__571DF1D5">
+      <ColNames>customer_id</ColNames>
+      <CreatedTimestamp>2023-03-07.05:22:00.053</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:22:00.053</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1461580245</ObjectId>
+      <RefColNames>customer_id</RefColNames>
+      <RefTableId>1205579333</RefTableId>
+      <RefTableName>Customer</RefTableName>
+    </foreign-key>
+    <foreign-key id="70" parent="43" name="FK__Orders__employee__5812160E">
+      <ColNames>employee_id</ColNames>
+      <CreatedTimestamp>2023-03-07.05:22:00.060</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:22:00.060</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1477580302</ObjectId>
+      <RefColNames>employee_id</RefColNames>
+      <RefTableId>1237579447</RefTableId>
+      <RefTableName>Employee</RefTableName>
+    </foreign-key>
+    <index id="71" parent="43" name="PK__Orders__465962294AC9340B">
+      <Clustering>1</Clustering>
+      <ColNames>order_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="72" parent="43" name="PK__Orders__465962294AC9340B">
+      <CreatedTimestamp>2023-03-07.05:22:00.053</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:22:00.053</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1445580188</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__Orders__465962294AC9340B</UnderlyingIndexName>
+    </key>
+    <check id="73" parent="44" name="CK__Product__list_pr__4E88ABD4">
+      <ColNames>list_price</ColNames>
+      <CreatedTimestamp>2023-03-07.05:20:17.130</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:20:17.130</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1317579732</ObjectId>
+      <Predicate>[list_price]&gt;0</Predicate>
+    </check>
+    <column id="74" parent="44" name="product_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="75" parent="44" name="product_name">
+      <DasType>nvarchar(50 char)|0s</DasType>
+      <Position>2</Position>
+      <CollationName>SQL_Latin1_General_CP1_CI_AS</CollationName>
+    </column>
+    <column id="76" parent="44" name="list_price">
+      <DasType>money|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="77" parent="44" name="PK__Product__47027DF584B1BE5A">
+      <Clustering>1</Clustering>
+      <ColNames>product_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="78" parent="44" name="PK__Product__47027DF584B1BE5A">
+      <CreatedTimestamp>2023-03-07.05:20:17.127</CreatedTimestamp>
+      <ModifiedTimestamp>2023-03-07.05:20:17.127</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1301579675</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__Product__47027DF584B1BE5A</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
