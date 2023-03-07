@@ -57,6 +57,7 @@ public class Employee {
         employee_id = sc.nextInt();
         System.out.println("Enter employee name: ");
         employee_name = sc.nextLine();
+        sc.nextLine();
         System.out.println("Enter salary: ");
         salary = sc.nextDouble();
         System.out.println("Enter spvrld: ");
@@ -64,4 +65,5 @@ public class Employee {
 
 
     }
+
 }

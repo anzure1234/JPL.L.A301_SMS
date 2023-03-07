@@ -6,7 +6,7 @@ import fa.training.utils.DBUtils;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-public class EmployeeDAOImpl extends EmployeeDAO{
+public class EmployeeDAOImpl implements EmployeeDAO{
     @Override
     public boolean addEmployee(Employee employee) {
         try{

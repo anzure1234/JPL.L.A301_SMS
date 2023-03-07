@@ -1,5 +1,7 @@
 package fa.training.dao;
 
+import fa.training.entities.Employee;
+
 public interface EmployeeDAO {
-    public void addEmployee();
+    public boolean addEmployee(Employee employee);
 }

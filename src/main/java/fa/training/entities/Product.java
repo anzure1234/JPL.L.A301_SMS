@@ -48,6 +48,7 @@ public class Product {
         product.setProduct_id(sc.nextInt());
         System.out.println("Enter product name: ");
         product.setProduct_name(sc.nextLine());
+        sc.nextLine();
         System.out.println("Enter list price: ");
         product.setList_price(sc.nextDouble());
     }

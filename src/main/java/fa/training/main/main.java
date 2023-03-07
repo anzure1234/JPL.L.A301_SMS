@@ -115,17 +115,21 @@ public class main {
                     product.addProduct();
                     productDAO.addProduct(product);
                     System.out.println("Add product successfully");
+                    break;
                 case 11:
                     System.out.println("Add employee");
                     Employee employee = new Employee();
                     employee.addEmployee();
                     employeeDAO.addEmployee(employee);
                     System.out.println("Add employee successfully");
-
-                case :
+                    break;
+                case 12:
                     System.out.println("Exit");
                     System.exit(choice);
-
+                    break;
+                default:
+                    System.out.println("Invalid option");
+                    break;
             }
         }
 
