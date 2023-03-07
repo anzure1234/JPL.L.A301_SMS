@@ -22,6 +22,8 @@ public class CustomerDAOImpl implements CustomerDAO {
                 Customer customer = new Customer();
                 int customer_id = rs.getInt(1);
                 String customer_name = rs.getString(2);
+                customer.setCustomer_id(customer_id);
+                customer.setCustomer_name(customer_name);
                 customers.add(customer);
             }
         }catch (Exception e){
@@ -69,10 +71,12 @@ public class CustomerDAOImpl implements CustomerDAO {
     public boolean updateCustomer(Customer customer) {
         try {
             Connection conn = DBUtils.getConnection();
-            String sql = "update Customer set customer_id = ?, customer_name = ? where customer_name = ?";
+            String sql = "update Customer set customer_name = ? where customer_id = ?";
             PreparedStatement stm = conn.prepareStatement(sql);
-            stm.setInt(1, customer.getCustomer_id());
-            stm.setString(2, customer.getCustomer_name());
+            stm.setInt(2, customer.getCustomer_id());
+            stm.setString(1, customer.getCustomer_name());
+
+
             int result = stm.executeUpdate();
             if (result > 0) {
                 return true;

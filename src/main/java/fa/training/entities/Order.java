@@ -64,17 +64,16 @@ public class Order {
 
     public void addOrder(){
         Scanner sc = new Scanner(System.in);
-        Order order = new Order();
         System.out.println("Enter order id: ");
-        order.setOrder_id(sc.nextInt());
+        order_id= sc.nextInt();
         System.out.println("Enter order date: ");
-        order.setOrderDate(LocalDate.parse(sc.next()));
+        orderDate=LocalDate.parse(sc.next());
         System.out.println("Enter customer id: ");
-        order.setCustomer_id(sc.nextInt());
+        customer_id=sc.nextInt();
         System.out.println("Enter employee id: ");
-        order.setEmployee_id(sc.nextInt());
+        employee_id=sc.nextInt();
         System.out.println("Enter total: ");
-        order.setTotal(sc.nextDouble());
+        total=sc.nextDouble();
     }
 
     @Override

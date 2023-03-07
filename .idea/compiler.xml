@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JPL.L.A301_SMS" target="19" />
+      <module name="JPL.L.A301_SMS" target="18" />
     </bytecodeTargetLevel>
   </component>
 </project>

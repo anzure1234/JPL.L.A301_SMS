@@ -10,7 +10,7 @@ public class DBUtils {
     public static Connection getConnection(){
         try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            String url = "jdbc:sqlserver://localhost:1433;encrypt=false;database=SMS;integratedSecurity=false;";
+            String url = "jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;database=SMS;integratedSecurity=false;";
             String username = "sa";
             String password ="1234";
             Connection conn = DriverManager.getConnection(url,username,password);

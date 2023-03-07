@@ -32,11 +32,10 @@ public class Customer {
 
     public void addCustomer(){
         Scanner scanner = new Scanner(System.in);
-        Customer customer = new Customer();
         System.out.println("Enter customer id: ");
-        customer.setCustomer_id(scanner.nextInt());
+        setCustomer_id(scanner.nextInt());
         System.out.println("Enter customer name: ");
-        customer.setCustomer_name(scanner.next());
+        setCustomer_name(scanner.next());
 
     }
 
