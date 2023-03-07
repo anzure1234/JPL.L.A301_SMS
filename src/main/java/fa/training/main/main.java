@@ -1,12 +1,7 @@
 package fa.training.main;
 
-import fa.training.dao.CustomerDAO;
-import fa.training.dao.CustomerDAOImpl;
-import fa.training.dao.LineItemDAOImpl;
-import fa.training.dao.OrderDAOimpl;
-import fa.training.entities.Customer;
-import fa.training.entities.LineItem;
-import fa.training.entities.Order;
+import fa.training.dao.*;
+import fa.training.entities.*;
 
 import javax.sound.sampled.Line;
 import java.util.ArrayList;
@@ -19,6 +14,8 @@ public class main {
         CustomerDAOImpl customerDAO = new CustomerDAOImpl();
         OrderDAOimpl orderDAO = new OrderDAOimpl();
         LineItemDAOImpl lineItemDAO = new LineItemDAOImpl();
+        ProductDAOImpl productDAO = new ProductDAOImpl();
+        EmployeeDAOImpl employeeDAO = new EmployeeDAOImpl();
 
         List<Customer> customers = new ArrayList<>();
         List<Order> orders = new ArrayList<>();
@@ -34,6 +31,8 @@ public class main {
         System.out.println("7. Compute order total");
         System.out.println("8. Get all items by order id");
         System.out.println("9. Add line item");
+        System.out.println("10. Add product ");
+        System.out.println("11. Add Employee");
         System.out.println("10. Exit");
         while(true){
             int choice = sc.nextInt();
@@ -109,12 +108,24 @@ public class main {
                     lineItemDAO.addLineItem(lineItem);
                     System.out.println("Add line item successfully");
                     break;
+
                 case 10:
+                    System.out.println("Add product");
+                    Product product = new Product();
+                    product.addProduct();
+                    productDAO.addProduct(product);
+                    System.out.println("Add product successfully");
+                case 11:
+                    System.out.println("Add employee");
+                    Employee employee = new Employee();
+                    employee.addEmployee();
+                    employeeDAO.addEmployee(employee);
+                    System.out.println("Add employee successfully");
+
+                case :
                     System.out.println("Exit");
                     System.exit(choice);
-                default:
-                    System.out.println("Invalid option");
-                    break;
+
             }
         }
 

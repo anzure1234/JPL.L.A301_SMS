@@ -40,6 +40,7 @@ public class Product {
         this.list_price = list_price;
     }
 
+
     public void addProduct(){
         Scanner sc = new Scanner(System.in);
         Product product = new Product();

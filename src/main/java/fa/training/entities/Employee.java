@@ -1,5 +1,7 @@
 package fa.training.entities;
 
+import java.util.Scanner;
+
 public class Employee {
     private int employee_id;
     private String employee_name;
@@ -46,5 +48,20 @@ public class Employee {
 
     public void setSpvrld(int spvrld) {
         this.spvrld = spvrld;
+    }
+
+    public void addEmployee(){
+        Scanner sc= new Scanner(System.in);
+        Employee employee = new Employee();
+        System.out.println("Enter employee id: ");
+        employee_id = sc.nextInt();
+        System.out.println("Enter employee name: ");
+        employee_name = sc.nextLine();
+        System.out.println("Enter salary: ");
+        salary = sc.nextDouble();
+        System.out.println("Enter spvrld: ");
+        spvrld = sc.nextInt();
+
+
     }
 }
